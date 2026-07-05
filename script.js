@@ -1,4 +1,4 @@
-const API_KEY = '406625e4be82bbdcff2d29fbf016a597';
+const API_KEY = YOUR_API_KEY;
 const searchInput = document.querySelector('.search-bar');
 const moviesContainer = document.querySelector('.movies-container');
 let movies = [];
