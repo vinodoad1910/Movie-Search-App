@@ -1,4 +1,4 @@
-const API_KEY = YOUR_API_KEY;
+const API_KEY = 'YOUR_API_KEY';
 const searchInput = document.querySelector('.search-bar');
 const moviesContainer = document.querySelector('.movies-container');
 let movies = [];
@@ -25,7 +25,7 @@ function renderMovies(moviesArray){
             <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${movie.title}">
             <h3>${movie.title}</h3>
             <p>Release Date: ${movie.release_date}</p>
-            <p>Rating: ${movie.vote_average}</p>
+            <p class='rating'>Rating: ${movie.vote_average}<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
         `;
         moviesContainer.appendChild(movieCard);
     })
